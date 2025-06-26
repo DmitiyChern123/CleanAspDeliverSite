@@ -1,0 +1,149 @@
+.
+├── ./Application
+│   ├── ./Application/clases
+│   │   └── ./Application/clases/ValidateProduct.cs
+│   ├── ./Application/DTO
+│   │   ├── ./Application/DTO/CartDto.cs
+│   │   ├── ./Application/DTO/EditProductDto.cs
+│   │   ├── ./Application/DTO/EditTypesDto.cs
+│   │   ├── ./Application/DTO/HomeDto.cs
+│   │   ├── ./Application/DTO/NewUserDto.cs
+│   │   ├── ./Application/DTO/OrdersDTO.cs
+│   │   └── ./Application/DTO/ProfileDto.cs
+│   └── ./Application/Interfaces
+│       ├── ./Application/Interfaces/IOrderRepository.cs
+│       ├── ./Application/Interfaces/IOrderService.cs
+│       ├── ./Application/Interfaces/IProductRepository.cs
+│       ├── ./Application/Interfaces/IProductService.cs
+│       ├── ./Application/Interfaces/IRepository.cs
+│       ├── ./Application/Interfaces/IUnitOfWork.cs
+│       ├── ./Application/Interfaces/IUserRepository.cs
+│       └── ./Application/Interfaces/IUserService.cs
+├── ./appsettings.Development.json
+├── ./appsettings.json
+├── ./bin
+│   └── ./bin/Debug
+├── ./Data.sqlite
+├── ./DiplomApplication.csproj
+├── ./DiplomApplication.sln
+├── ./DiplomApplication.sln.DotSettings.user
+├── ./Domain
+│   ├── ./Domain/Entities
+│   │   ├── ./Domain/Entities/Cart.cs
+│   │   ├── ./Domain/Entities/CartInOrder.cs
+│   │   ├── ./Domain/Entities/Category.cs
+│   │   ├── ./Domain/Entities/Courier.cs
+│   │   ├── ./Domain/Entities/DiplomContext.cs
+│   │   ├── ./Domain/Entities/Order.cs
+│   │   ├── ./Domain/Entities/Product.cs
+│   │   ├── ./Domain/Entities/ProductType.cs
+│   │   ├── ./Domain/Entities/Promotion.cs
+│   │   ├── ./Domain/Entities/StatusOrder.cs
+│   │   └── ./Domain/Entities/User.cs
+│   └── ./Domain/Migrations
+│       ├── ./Domain/Migrations/20240729101041_InitialCreate.cs
+│       ├── ./Domain/Migrations/20240729101041_InitialCreate.Designer.cs
+│       ├── ./Domain/Migrations/20250505104327_Initial.cs
+│       ├── ./Domain/Migrations/20250505104327_Initial.Designer.cs
+│       ├── ./Domain/Migrations/AppDbContextModelSnapshot.cs
+│       └── ./Domain/Migrations/DiplomContextModelSnapshot.cs
+├── ./Infrastructure
+│   ├── ./Infrastructure/Repositories
+│   │   ├── ./Infrastructure/Repositories/AppDbContext.cs
+│   │   ├── ./Infrastructure/Repositories/OrderRepository.cs
+│   │   ├── ./Infrastructure/Repositories/ProductRepository.cs
+│   │   ├── ./Infrastructure/Repositories/Repository.cs
+│   │   └── ./Infrastructure/Repositories/UserRepository.cs
+│   └── ./Infrastructure/Services
+│       ├── ./Infrastructure/Services/OrderService.cs
+│       ├── ./Infrastructure/Services/ProductService.cs
+│       └── ./Infrastructure/Services/UserService.cs
+├── ./Logs
+│   ├── ./Logs/log-20250527.json
+│   ├── ./Logs/log-20250528.json
+│   ├── ./Logs/log-20250529.json
+│   ├── ./Logs/log-20250530.json
+│   └── ./Logs/log-20250602.json
+├── ./MapperProfile
+│   └── ./MapperProfile/AutoMapperProfile.cs
+├── ./obj
+│   ├── ./obj/Debug
+│   ├── ./obj/DiplomApplication.csproj.EntityFrameworkCore.targets
+│   ├── ./obj/DiplomApplication.csproj.nuget.dgspec.json
+│   ├── ./obj/DiplomApplication.csproj.nuget.g.props
+│   ├── ./obj/DiplomApplication.csproj.nuget.g.targets
+│   ├── ./obj/project.assets.json
+│   ├── ./obj/project.nuget.cache
+│   ├── ./obj/project.packagespec.json
+│   ├── ./obj/rider.project.model.nuget.info
+│   └── ./obj/rider.project.restore.info
+├── ./Program.cs
+├── ./Properties
+│   └── ./Properties/launchSettings.json
+├── ./README.md
+├── ./structure.txt
+├── ./treestructure.txt
+├── ./Web
+│   ├── ./Web/Controllers
+│   │   ├── ./Web/Controllers/AccountController.cs
+│   │   ├── ./Web/Controllers/CartController.cs
+│   │   └── ./Web/Controllers/HomeController.cs
+│   ├── ./Web/Models
+│   │   ├── ./Web/Models/CartViewModel.cs
+│   │   ├── ./Web/Models/EditProductViewModel.cs
+│   │   ├── ./Web/Models/EditTypesViewModel.cs
+│   │   ├── ./Web/Models/ErrorViewModel.cs
+│   │   ├── ./Web/Models/HomeModel.cs
+│   │   ├── ./Web/Models/LoginViewModel.cs
+│   │   ├── ./Web/Models/LogsViewModel.cs
+│   │   ├── ./Web/Models/OrdersViewModel.cs
+│   │   ├── ./Web/Models/ProfileViewModel.cs
+│   │   └── ./Web/Models/RegistrarionViewModel.cs
+│   ├── ./Web/Views
+│   │   ├── ./Web/Views/Account
+│   │   │   ├── ./Web/Views/Account/Index.cshtml
+│   │   │   ├── ./Web/Views/Account/Profile.cshtml
+│   │   │   └── ./Web/Views/Account/Registration.cshtml
+│   │   ├── ./Web/Views/Cart
+│   │   │   ├── ./Web/Views/Cart/Index.cshtml
+│   │   │   ├── ./Web/Views/Cart/successOrder.cshtml
+│   │   │   └── ./Web/Views/Cart/СreateOrder.cshtml
+│   │   ├── ./Web/Views/Home
+│   │   │   ├── ./Web/Views/Home/CreateOrEditProduct.cshtml
+│   │   │   ├── ./Web/Views/Home/EditTypes.cshtml
+│   │   │   ├── ./Web/Views/Home/Index.cshtml
+│   │   │   ├── ./Web/Views/Home/Loadfiles.cshtml
+│   │   │   ├── ./Web/Views/Home/LoggerPage.cshtml
+│   │   │   ├── ./Web/Views/Home/OrderEdit.cshtml
+│   │   │   └── ./Web/Views/Home/Privacy.cshtml
+│   │   ├── ./Web/Views/Shared
+│   │   │   ├── ./Web/Views/Shared/Error.cshtml
+│   │   │   ├── ./Web/Views/Shared/_Layout.cshtml
+│   │   │   ├── ./Web/Views/Shared/_Layout.cshtml.css
+│   │   │   ├── ./Web/Views/Shared/_ProductDetails.cshtml
+│   │   │   └── ./Web/Views/Shared/_ValidationScriptsPartial.cshtml
+│   │   ├── ./Web/Views/_ViewImports.cshtml
+│   │   └── ./Web/Views/_ViewStart.cshtml
+│   └── ./Web/wwwroot
+│       ├── ./Web/wwwroot/categories
+│       │   └── ./Web/wwwroot/categories/cat1.png
+│       ├── ./Web/wwwroot/css
+│       │   ├── ./Web/wwwroot/css/Edit.css
+│       │   ├── ./Web/wwwroot/css/Login.css
+│       │   ├── ./Web/wwwroot/css/main.css
+│       │   ├── ./Web/wwwroot/css/mainheader.css
+│       │   ├── ./Web/wwwroot/css/Order.css
+│       │   ├── ./Web/wwwroot/css/Privacity.css
+│       │   ├── ./Web/wwwroot/css/Profile.css
+│       │   ├── ./Web/wwwroot/css/site.css
+│       │   ├── ./Web/wwwroot/css/Slider.css
+│       │   └── ./Web/wwwroot/css/table.css
+│       ├── ./Web/wwwroot/favicon.ico
+│       ├── ./Web/wwwroot/images
+│       ├── ./Web/wwwroot/js
+│       │   └── ./Web/wwwroot/js/site.js
+│       ├── ./Web/wwwroot/lib
+│       │   ├── ./Web/wwwroot/lib/bootstrap
+└── ./WebApplication1.csproj.user
+
+164 directories, 525 files

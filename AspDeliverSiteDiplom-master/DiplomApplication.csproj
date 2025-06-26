@@ -1,0 +1,88 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="wwwroot\images\cat1.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="14.0.0" />
+    <PackageReference Include="Dadata" Version="23.6.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.OAuth" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="6.0.28" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.15" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="7.0.15" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.15" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.15">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.16" />
+    <PackageReference Include="Moq" Version="4.20.70" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="RestSharp" Version="110.2.0" />
+    <PackageReference Include="Serilog" Version="3.1.1" />
+    <PackageReference Include="Serilog.AspNetCore" Version="8.0.1" />
+  </ItemGroup>
+  <PropertyGroup>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="Domain\" />
+    <Folder Include="Web\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <_ContentIncludedByDefault Remove="Views\Account\Index.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\Account\Profile.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\Account\Registration.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\Cart\Index.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\Cart\successOrder.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\Cart\СreateOrder.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\Home\CreateOrEditProduct.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\Home\EditTypes.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\Home\Index.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\Home\Loadfiles.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\Home\LoggerPage.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\Home\OrderEdit.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\Home\Privacy.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\Shared\Error.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\Shared\_Layout.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\Shared\_ProductDetails.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\Shared\_ValidationScriptsPartial.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\_ViewImports.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\_ViewStart.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <AdditionalFiles Include="Web\Views\Account\Index.cshtml" />
+    <AdditionalFiles Include="Web\Views\Account\Profile.cshtml" />
+    <AdditionalFiles Include="Web\Views\Account\Registration.cshtml" />
+    <AdditionalFiles Include="Web\Views\Cart\Index.cshtml" />
+    <AdditionalFiles Include="Web\Views\Cart\successOrder.cshtml" />
+    <AdditionalFiles Include="Web\Views\Cart\СreateOrder.cshtml" />
+    <AdditionalFiles Include="Web\Views\Home\CreateOrEditProduct.cshtml" />
+    <AdditionalFiles Include="Web\Views\Home\EditTypes.cshtml" />
+    <AdditionalFiles Include="Web\Views\Home\Index.cshtml" />
+    <AdditionalFiles Include="Web\Views\Home\Loadfiles.cshtml" />
+    <AdditionalFiles Include="Web\Views\Home\LoggerPage.cshtml" />
+    <AdditionalFiles Include="Web\Views\Home\OrderEdit.cshtml" />
+    <AdditionalFiles Include="Web\Views\Home\Privacy.cshtml" />
+    <AdditionalFiles Include="Web\Views\Shared\Error.cshtml" />
+    <AdditionalFiles Include="Web\Views\Shared\_Layout.cshtml" />
+    <AdditionalFiles Include="Web\Views\Shared\_ProductDetails.cshtml" />
+    <AdditionalFiles Include="Web\Views\Shared\_ValidationScriptsPartial.cshtml" />
+    <AdditionalFiles Include="Web\Views\_ViewImports.cshtml" />
+    <AdditionalFiles Include="Web\Views\_ViewStart.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Web\wwwroot\images\cat1.png" />
+  </ItemGroup>
+
+</Project>
